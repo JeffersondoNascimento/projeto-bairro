@@ -1,0 +1,74 @@
+@charset "UFT-css";
+
+:root {
+    --cor01: #556358;
+    --cor02: #637568;
+    --cor03: #2c352e;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BFBFB8;
+    margin: 0px;
+}
+header {
+    background-color: #4C594F;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px;
+
+}
+header h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02,) var(--cor03));
+}
+main {
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 300px;
+    max-width: 900px;
+    min-height: 1000px;
+    max-height: 3800px;
+    margin: auto;
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.301)
+}
+.container {
+    width: 80%; /* Define a largura do contêiner */
+    margin: 0px auto; /* Define margens automáticas na horizontal */
+    text-align: center;
+}
+main p {
+    margin: 27px;
+}
+footer p {
+    text-align: center;
+    color: white;
+    background-color: #4C594F;
+    margin: 12px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+/* Celulares*/
+@media (min-width: 320px) {
+    .imagemResponsiva {
+        width: 70%;
+    }
+    
+    header h1 {
+        font-size: 40px;
+    }
+
+    main p {
+        margin: 25px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}
