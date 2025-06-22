@@ -3,7 +3,8 @@
 :root {
     --cor01: #556358;
     --cor02: #637568;
-    --cor03: #2c352e;
+    --cor03: #495a4e;
+    --cor04:#4d684f;
 }
 
 body {
@@ -12,12 +13,14 @@ body {
     margin: 0px;
 }
 header {
-    background-color: #4C594F;
+      background-color: #4C594F;
     height: 120px;
     width: 100%;
     text-align: center;
     padding-top: 30px;
     margin-top: 0px;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor03), var(--cor04));
+    border-radius: 0px 0px 5px 5px;
 
 }
 header h1 {
@@ -25,9 +28,9 @@ header h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     margin: auto;
-    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02,) var(--cor03));
 }
 main {
+    font-size: 19px;
     padding-top: 20px;
     background-color: white;
     border-radius: 0px 0px 10px 10px;
@@ -51,8 +54,10 @@ footer p {
     color: white;
     background-color: #4C594F;
     margin: 12px 0px 0px 0px;
-    padding: 5px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
+    border-radius: 1px 1px 0px 0px;
 }
+
 
 /* Celulares*/
 @media (min-width: 320px) {
@@ -66,9 +71,10 @@ footer p {
 
     main p {
         margin: 25px;
+
     }
 
     footer p {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
